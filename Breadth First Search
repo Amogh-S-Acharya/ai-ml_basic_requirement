@@ -1,5 +1,13 @@
 #BFS
 from collections import deque
+graph={
+    'A':set(['B','C']),
+    'B':set(['D','E']),
+    'C':set(['F']),
+    'D':set([]),
+    'E':set([]),
+    'F':set([])
+}
 def bfs(graph,start):
     visited=set()
     queue=deque([start])
